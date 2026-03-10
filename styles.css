@@ -1,0 +1,171 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #2c3e50);
+  color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #27ae60;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+input#customerName {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+button#addOrder {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+button#addOrder:hover {
+  background: #d35400;
+}
+
+.order {
+  background: #2c3e50;
+  margin: 15px auto;
+  padding: 20px;
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  text-align: left;
+  border: 2px solid #27ae60;
+}
+
+.order h3 {
+  margin-top: 0;
+  color: #f1c40f;
+  font-size: 18px;
+}
+
+.step {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: left;
+  font-size: 14px;
+}
+
+.step:hover {
+  background: #2980b9;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.step.completed {
+  background: #2ecc71;
+  color: white;
+  font-weight: bold;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #1c1c1c;
+  color: #ecf0f1;
+  margin: 8% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 450px;
+  text-align: center;
+  border: 2px solid #f39c12;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+.modal-content h2 {
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+select#productSelect {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+textarea#modalInput {
+  width: 90%;
+  height: 80px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button#completeStep {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button#completeStep:hover {
+  background: #2ecc71;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurante Pro - Flujo de Pedidos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>🍷 Restaurante Pro - Flujo de Pedidos</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <div class="form-section">
+      <label for="customerName">Nombre del cliente:</label>
+      <input type="text" id="customerName" placeholder="Escribe el nombre aquí">
+      <button id="addOrder">➕ Agregar Pedido</button>
+    </div>
+
+    <!-- Contenedor de pedidos -->
+    <div id="orders"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalBody"></p>
+
+      <!-- Selector de productos -->
+      <label for="productSelect" id="productLabel">Selecciona un producto:</label>
+      <select id="productSelect">
+        <optgroup label="Entradas">
+          <option value="ensalada">Ensalada fresca</option>
+          <option value="sopa">Sopa del día</option>
+        </optgroup>
+        <optgroup label="Platos principales">
+          <option value="carne">Carne asada</option>
+          <option value="pollo">Pollo al horno</option>
+          <option value="pasta">Pasta italiana</option>
+        </optgroup>
+        <optgroup label="Bebidas">
+          <option value="agua">Agua</option>
+          <option value="vino">Vino tinto</option>
+          <option value="jugo">Jugo natural</option>
+        </optgroup>
+        <optgroup label="Postres">
+          <option value="helado">Helado</option>
+          <option value="tarta">Tarta de frutas</option>
+        </optgroup>
+      </select>
+
+      <textarea id="modalInput" placeholder="Notas adicionales..."></textarea>
+      <button id="completeStep">✅ Completar</button>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 Restaurante Pro - Simulación Académica</p>
+  </footer>
+
+  <!-- Script compilado desde TypeScript -->
+  <script src="restaurante.js"></script>
+</body>
+</html>
